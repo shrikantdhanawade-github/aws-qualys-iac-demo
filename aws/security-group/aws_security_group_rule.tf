@@ -24,3 +24,12 @@ resource "aws_security_group_rule" "rule_port_25" {
   cidr_blocks       = ["0.0.0.0/0"]
   security_group_id = "sg-03732eaaaa344530d"
 }
+
+resource "aws_security_group_rule" "rule_port_21" {
+  type = "ingress"
+  from_port         = 21
+  to_port           = 21
+  protocol          = "tcp"
+  cidr_blocks       = ["0.0.0.0/0"]
+  security_group_id = "sg-03732eaaaa344530d"
+}
