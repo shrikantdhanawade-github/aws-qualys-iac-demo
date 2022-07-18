@@ -20,5 +20,3 @@ jobs:
                 URL: ${{ secrets.URL }}
                 UNAME: ${{ secrets.USERNAME }}
                 PASS: ${{ secrets.PASSWORD }}
-            with:
-              directory: 'aws_s3_bucket'
