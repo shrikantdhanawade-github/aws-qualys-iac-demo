@@ -77,6 +77,6 @@ resource "aws_elb" "default" {
   }
 
   tags {
-    Name = "ec2-elb"
+    Name = "ec2-elbb"
   }
 }
