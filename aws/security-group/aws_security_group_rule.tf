@@ -12,7 +12,7 @@ resource "aws_security_group_rule" "rule_port_3389" {
   from_port         = 3389
   to_port           = 3389
   protocol          = "tcp"
-  cidr_blocks       = ["103.97.242.17/32"]
+  cidr_blocks       = ["0.0.0.0/0"]
   security_group_id = "sg-03732eaaaa344530d"
 }
 
