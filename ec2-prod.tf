@@ -72,7 +72,7 @@ resource "aws_elb" "default" {
     target = "HTTP:80/"
     healthy_threshold = 2
     unhealthy_threshold = 2
-    interval = 30
+    interval = 35
     timeout = 5
   }
 
