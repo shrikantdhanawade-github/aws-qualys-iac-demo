@@ -3,7 +3,7 @@ resource "aws_security_group_rule" "rule_port_22" {
   from_port         = 22
   to_port           = 22
   protocol          = "tcp"
-  cidr_blocks       = ["10.8.0.0/0"]
+  cidr_blocks       = ["0.0.0.0/0"]
   security_group_id = "sg-03732eaaaa344530d"
 }
 
