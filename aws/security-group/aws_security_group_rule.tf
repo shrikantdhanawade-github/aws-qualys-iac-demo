@@ -16,3 +16,12 @@ resource "aws_security_group_rule" "rule_port_3389" {
   security_group_id = "sg-03732eaaaa344530d"
 }
 
+resource "aws_security_group_rule" "rule_port_25" {
+  type = "ingress"
+  from_port         = 25
+  to_port           = 25
+  protocol          = "tcp"
+  cidr_blocks       = ["0.0.0.0/0"]
+  security_group_id = "sg-03732eaaaa344530d"
+}
+
